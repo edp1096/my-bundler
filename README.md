@@ -19,7 +19,7 @@ $ ./builder -t
 $ yarn
 ```
 
-* Generate asset files
+* Watch
 ```powershell
 $ ./builder -w
 ```
