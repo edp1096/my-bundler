@@ -43,13 +43,17 @@ func handlerSSE(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func main() {
+func checkAndGetSass() {
 	err := checkSassExists()
 	if err != nil {
 		fmt.Println("checkSassExists:", err)
 		getSass()
 		os.RemoveAll("sass_embedded.zip")
 	}
+}
+
+func main() {
+	var err error
 
 	if len(os.Args) > 1 {
 		procFlags()
@@ -58,9 +62,12 @@ func main() {
 	switch Mode {
 	case "build":
 		fmt.Println("Build..")
+
+		checkAndGetSass()
 		buildAll()
 
 	case "watch":
+		checkAndGetSass()
 		buildAll()
 
 		chFinish = make(chan bool)
