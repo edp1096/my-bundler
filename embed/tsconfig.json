@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": [
+            "es5",
+            "es6",
+            "es2020",
+            "esnext",
+            "dom",
+            "dom.iterable"
+        ],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+    },
+}

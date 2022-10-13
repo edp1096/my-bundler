@@ -1,0 +1,10 @@
+{
+  "name": "hello-esbuild",
+  "version": "0.0.0",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.7.14"
+  }
+}
