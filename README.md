@@ -5,7 +5,7 @@ JS, SCSS working set using Esbuild for my personal usage
 
 * Build
 ```powershell
-$ make        # or mingw32-make.exe
+$ make          # or mingw32-make.exe
 ```
 
 * Print help
@@ -16,7 +16,7 @@ $ ./builder -h
 * Generate asset files
 ```powershell
 $ ./builder -t
-$ yarn
+$ yarn          # or npm install
 ```
 
 * Watch
