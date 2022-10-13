@@ -1,14 +1,12 @@
-JS, SCSS working set using Esbuild for personal usage
-
-
-## Build
-
-```powershell
-make                # or mingw32-make.exe
-```
+JS, SCSS working set using Esbuild for my personal usage
 
 
 ## Usage
+
+* Build
+```powershell
+$ make        # or mingw32-make.exe
+```
 
 * Print help
 ```powershell
